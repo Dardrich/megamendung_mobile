@@ -231,3 +231,15 @@ a. **Implementasi SnackBar dalam ItemCard**
        ),
      );
      ```
+
+## TI 8: Flutter Navigation, Layouts, Forms, and Input Elements
+
+### Q1: Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
+
+### Q2: Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+
+### Q3: Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+
+### Q4: Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+
+### Q5: Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
