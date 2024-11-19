@@ -282,3 +282,18 @@ theme: ThemeData(
 
 ### Q5: Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
 Pertama, saya buat sidebar (drawer) untuk memudahkan pengguna dalam bernavigasi di seluruh bagian aplikasi. Sidebar ini berisi beberapa opsi yang mengarah ke halaman-halaman tertentu, seperti halaman utama (home) dan halaman form untuk menambah batik. Kedua, saya mengatur masing-masing pilihan pada sidebar dengan fungsi Navigator. Untuk halaman utama, saya menggunakan Navigator.pushReplacement, yang fungsinya mengganti halaman saat ini dengan halaman home, sehingga halaman ini akan menjadi halaman utama yang "permanen" dalam stack. Artinya, ketika user kembali ke halaman sebelumnya, halaman utama tetap berada di posisi atas pada stack, tanpa menyimpan halaman-halaman lain di bawahnya. Sedangkan untuk halaman lain, seperti form entry, saya pakai Navigator.push biasa sehingga ketika user sudah selesai di halaman tersebut dan menekan tombol back, halaman itu langsung keluar dari stack page. Ini memungkinkan user untuk kembali ke halaman sebelumnya tanpa masalah.
+
+
+## TI 9: Integrasi Layanan Web Django dengan Aplikasi Flutter
+
+### Q1: Jelaskan mengapa kita perlu membuat model untuk melakukan pengambilan ataupun pengiriman data JSON? Apakah akan terjadi error jika kita tidak membuat model terlebih dahulu?
+
+### Q2: Jelaskan fungsi dari library http yang sudah kamu implementasikan pada tugas ini
+
+### Q3: Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+
+### Q4: Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+
+### Q5: Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+
+### Q6: Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!

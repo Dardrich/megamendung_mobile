@@ -1,5 +1,6 @@
 // screens/menu.dart
 import 'package:flutter/material.dart';
+import 'package:megamendung_mobile/widgets/item_cart.dart';
 import 'package:megamendung_mobile/widgets/left_drawer.dart';
 import 'package:megamendung_mobile/screens/itementry_form.dart';
 
@@ -118,52 +119,52 @@ class InfoCard extends StatelessWidget {
   }
 }
 
-class ItemHomepage {
-  final String title;
-  final IconData icon;
-  final Color color;
+// class ItemHomepage {
+//   final String title;
+//   final IconData icon;
+//   final Color color;
 
-  ItemHomepage(this.title, this.icon, this.color);
-}
+//   ItemHomepage(this.title, this.icon, this.color);
+// }
 
-class ItemCard extends StatelessWidget {
-  final ItemHomepage item;
+// class ItemCard extends StatelessWidget {
+//   final ItemHomepage item;
 
-  const ItemCard(this.item, {super.key});
+//   const ItemCard(this.item, {super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Kamu telah menekan tombol ${item.title}!'),
-            duration: Duration(seconds: 2),
-          ),
-        );
+//   @override
+//   Widget build(BuildContext context) {
+//     return GestureDetector(
+//       onTap: () {
+//         ScaffoldMessenger.of(context).showSnackBar(
+//           SnackBar(
+//             content: Text('Kamu telah menekan tombol ${item.title}!'),
+//             duration: Duration(seconds: 2),
+//           ),
+//         );
 
-        if (item.title == "Tambah Batik") {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const MoodEntryFormPage()),
-          );
-        }
-      },
-      child: Card(
-        color: item.color,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(item.icon, size: 40, color: Colors.white),
-            const SizedBox(height: 10),
-            Text(
-              item.title,
-              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+//         if (item.title == "Tambah Batik") {
+//           Navigator.push(
+//             context,
+//             MaterialPageRoute(builder: (context) => const ProductEntryFormPage()),
+//           );
+//         }
+//       },
+//       child: Card(
+//         color: item.color,
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: [
+//             Icon(item.icon, size: 40, color: Colors.white),
+//             const SizedBox(height: 10),
+//             Text(
+//               item.title,
+//               style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+//               textAlign: TextAlign.center,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
